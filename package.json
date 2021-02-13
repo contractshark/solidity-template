@@ -1,14 +1,8 @@
 {
-  "name": "@paulrberg/solidity-template",
-  "description": "Setup for writing Solidity smart contracts",
-  "version": "1.0.0",
-  "author": {
-    "name": "Paul Razvan Berg",
-    "url": "https://paulrberg.com"
-  },
+  "name": "ci-mock-solidity",
+  "description": "boilerplate mock repo for testing solidity CI processes",
+  "version": "0.0.0",
   "devDependencies": {
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^9.1.2",
     "@ethersproject/abstract-signer": "^5.0.6",
     "@ethersproject/bignumber": "^5.0.8",
     "@nomiclabs/hardhat-ethers": "^2.0.0",
@@ -21,8 +15,6 @@
     "@typescript-eslint/eslint-plugin": "^3.10.1",
     "@typescript-eslint/parser": "^3.10.1",
     "chai": "^4.2.0",
-    "commitizen": "^4.2.1",
-    "cz-conventional-changelog": "^3.3.0",
     "dotenv": "^8.2.0",
     "eslint": "^7.11.0",
     "eslint-config-prettier": "^6.12.0",
@@ -31,7 +23,6 @@
     "fs-extra": "^9.0.1",
     "hardhat": "^2.0.6",
     "hardhat-typechain": "^0.3.4",
-    "husky": "^4.3.0",
     "mocha": "^8.1.3",
     "prettier": "^2.1.2",
     "prettier-plugin-solidity": "^1.0.0-beta.1",
@@ -61,7 +52,6 @@
   },
   "scripts": {
     "clean": "hardhat clean",
-    "commit": "git-cz",
     "compile": "hardhat compile",
     "coverage": "hardhat coverage --solcoverjs ./.solcover.js --temp artifacts --testfiles \"./test/**/*.ts\"",
     "lint": "yarn run lint:sol && yarn run lint:ts && yarn run prettier:list-different",
