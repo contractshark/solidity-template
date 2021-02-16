@@ -43,8 +43,6 @@ jobs:
           pip3 install slither-analyzer
       - name: Install solc
         run: >
-          sudo wget -O /usr/bin/solc
-          https://github.com/ethereum/solidity/releases/download/v0.7.0/solc-static-linux
-          sudo chmod +x /usr/bin/solc
+          sudo wget -O /usr/bin/solc https://github.com/ethereum/solidity/releases/download/v0.7.0/solc-static-linux
       - name: Run slither
         run: slither .
